@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+body {
+  width: 1420;
+  background-color: black;
+}
+header {
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+
+/* Shared style */
+.display-flex {
+  display: flex;
+}
+
+.p-color {
+  color: rgb(231, 83, 55);
+}
+.btn-primary {
+  background-color: rgb(232, 82, 52);
+  padding: 10px 20px;
+  border-radius: 28px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.text-gray {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* Navbar related style */
+.navbar {
+  padding: 50px 94px 0px 130px;
+  justify-content: space-between;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 36px;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  opacity: 90%;
+}
+.nav-links {
+  width: 462px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+.fitness {
+  font-style: italic;
+  font-size: 2.1rem;
+}
+.navbar > img {
+  display: none;
+}
+/* Banner related style */
+.banner {
+  padding: 50px 94px 0px 130px;
+  position: relative;
+}
+.banner-content {
+  margin-top: 90px;
+}
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-description {
+  margin-top: 30px;
+}
+#shape {
+  font-family: "Dancing Script";
+}
+.btn {
+  margin-top: 30px;
+}
+#download-btn {
+  padding: 10px 20px;
+  border-radius: 28px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  border: 1px solid gray;
+  cursor: pointer;
+  margin-left: 12px;
+}
+#banner-image {
+  margin-left: 300px;
+}
+#card-box {
+  width: 180px;
+  height: 80px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  right: 3%;
+  top: 30%;
+  cursor: pointer;
+}
+#card-box-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 180px;
+  height: 80px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  color: white;
+  background: rgba(255, 255, 255, 0.034);
+  position: absolute;
+  bottom: 10%;
+  right: 24%;
+  cursor: pointer;
+}
+.circle-icon {
+  padding-left: -0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(231, 83, 55);
+}
+#number {
+  margin-right: 44px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+#number-b {
+  margin-right: 22px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/* Responsive mobile device */
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 30px 15px;
+  }
+  .navbar > .nav-links {
+    display: none;
+  }
+  .navbar > img {
+    width: 8%;
+    height: 8%;
+    margin-top: 10px;
+    display: block;
+  }
+  .banner {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #card-box {
+    top: 50%;
+    right: 10%;
+    height: 70px;
+    width: 150px;
+    border-radius: 10px;
+  }
+  #card-box-b {
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    right: 60%;
+    bottom: 24%;
+  }
+  #banner-image {
+    margin-left: 5px;
+  }
+}
