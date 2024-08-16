@@ -418,7 +418,7 @@ footer {
 
   /* Habits section related style */
   .habits-section {
-    margin-top: 380px;
+    margin-top: 420px;
   }
   .habit-cards {
     flex-direction: column;
@@ -522,7 +522,7 @@ footer {
   .team-description {
     margin-left: 10px;
   }
-  .display-flex {
+  .footer-div {
     flex-direction: column;
   }
 }
