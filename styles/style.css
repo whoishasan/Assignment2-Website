@@ -290,6 +290,96 @@ select {
   width: 25%;
   margin-left: 6px;
 }
+/* Team section related style */
+.team-section {
+  height: 100%;
+  width: 100%;
+}
+.team-head {
+  margin-top: 90px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.team-title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.team-description {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.team-image-container {
+  padding: 30px;
+  gap: 30px;
+  margin: 58px 190px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.card {
+  position: relative;
+}
+.card-content {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+.card > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer section styles */
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 60px 0px 170px 0px;
+  width: 100%;
+  height: 100%;
+}
+.fitness-footer {
+  padding-left: 190px;
+  width: 30%;
+  height: 100%;
+}
+.fitness-footer > h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.get-started-a {
+  margin-top: 25px;
+  margin-left: 140px;
+}
+.get-started-b {
+  margin-top: 25px;
+  margin-left: 140px;
+}
+.footer-nav > li {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.footer-nav > li > a {
+  color: rgba(255, 255, 255, 0.5);
+}
+#line {
+  margin: 0 auto;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+  height: 1px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.copyright {
+  margin-top: 30px;
+  text-align: center;
+}
 /* Responsive mobile device */
 @media screen and (max-width: 576px) {
   .navbar {
@@ -401,5 +491,38 @@ select {
   .calculate-btn {
     width: 50%;
     margin: 5px 0px 20px 5px;
+  }
+  footer {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .fitness-footer {
+    width: 94%;
+    padding: 10px;
+  }
+  .fitness-footer > h1,
+  p {
+    width: 94%;
+  }
+  .get-started-a {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .get-started-b {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .team-image-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 80%;
+  }
+  .team-description {
+    margin-left: 10px;
+  }
+  .display-flex {
+    flex-direction: column;
   }
 }
